@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+         body {
+         padding-top: 0px;
+         display: flex;
+         justify-content:center;
+         }
+         #contenido{
+         background-image: url("https://agenciasanluis.com/wp-content/uploads/2013/12/ARBOLNVD.jpg");
+         background-size: 1000px 600px;
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 500px;
+         width: 500px;
+         display: flex;
+         }
+         #contenedor{
+         width: 900px;
+         }
+         #cabecera{
+        width: 770px;
+        height: 100px;
+        background-color: yellow;
+         }
+         #menu{
+         float: left;
+         width:150px;
+         height: 150px;
+         background-color: red;
+         }
+         #pie{
+         clear: both;
+         background-color: blue;
+         width: 770px;
+         height: 100px;
+         }
+         .regalo {
+         padding-top: 390px;
+         margin: 10px;
+         cursor: pointer;
+         }
+         .caja, .tapa {
+         background:
+         -webkit-radial-gradient(white 10%, transparent 15.1%),
+         -webkit-radial-gradient(white 7%, transparent 15.1%),
+         #f80000;
+         background-position: 0 0, 25px 25px;
+         background-size: 50px 50px;
+         position: relative;
+         margin: 0 auto;
+         }
+         .caja {
+         width: 70px;
+         height: 60px;
+         }
+         .tapa {
+         width: 70px;
+         height: 20px;
+         box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+         z-index: 1;
+         padding: 0 2px;
+         background-color: #f80000;
+         /* transiciones */
+         top: 0;
+         left: 0;
+         transition: 
+         top ease-out 0.5s,
+         left ease-out 0.5s,
+         transform ease-out 0.5s;
+         }
+         .caja span, .tapa span {
+         position: absolute;
+         display: block;
+         background: rgba(239, 184, 16, 0.8);
+         box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+         }
+         .caja span:first-child {
+         width: 100%;
+         height: 15px;
+         top: 20px;
+         }
+         .caja span:last-child, .tapa span {
+         width: 15px;
+         height: 100%;
+         left: 25px;
+         }
+         .tapa span {
+         left: 28px;
+         }
+         .promo {
+         font-size: 30px;
+         color: white;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         text-align: center;
+         position: relative;
+         height: 0;
+         top: 10px;
+         transition: all ease-out 0.7s;
+         }
+         .promo p {
+         font-size: 12px;
+         margin: 0;
+         }
+         .promo h2 {
+         font-size: 15px;
+         margin: 0;
+         }
+         /* Efecto hover */
+         .regalo:hover .tapa {
+         top: -100px;
+         transform: rotateZ(10deg);
+         left: 10px;
+         }
+         .regalo:hover .promo {
+         top: -80px;
+         } 
+      </style>
+   </head>
+   <body>
+      <div id="contenedor">
+         <div id="cabecera"></div>
+         <div id="menu"></div>
+         <div id="contenido">
+            <div class="regalo">
+               <div class="tapa" style="background-color: darkgray;">
+                  <span></span>
+               </div>
+               <div class="promo">
+                  <p>Felices Fiestas</p>
+                  <h2>NAVIDAD 2022</h2>
+               </div>
+               <div class="caja" style="background-color: darkgray;">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+            <div class="regalo">
+               <div class="tapa" style="background-color: blue;">
+                  <span></span>
+               </div>
+               <div class="promo">
+                  <p>Felices Fiestas</p>
+                  <h2>NAVIDAD 2022</h2>
+               </div>
+               <div class="caja" style="background-color: blue;">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+            <div class="regalo">
+               <div class="tapa" style="background-color: orange;">
+                  <span></span>
+               </div>
+               <div class="promo">
+                  <p>Felices Fiestas</p>
+                  <h2>NAVIDAD 2022</h2>
+               </div>
+               <div class="caja" style="background-color: orange;">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+            <div class="regalo">
+               <div class="tapa" style="background-color: green;">
+                  <span></span>
+               </div>
+               <div class="promo">
+                  <p>Felices Fiestas</p>
+                  <h2>NAVIDAD 2022</h2>
+               </div>
+               <div class="caja" style="background-color: green;">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+            <div class="regalo">
+               <div class="tapa">
+                  <span></span>
+               </div>
+               <div class="promo">
+                  <p>Felices Fiestas</p>
+                  <h2>NAVIDAD 2022</h2>
+               </div>
+               <div class="caja">
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <div id="pie"></div>
+      </div>
+</html>
